@@ -15,8 +15,8 @@ function reloadWebsite(a) {
 app.use((req, res, next) => {
   setTimeout(function() {
   console.log('等了一会');}, 30000);
-  const url2 = `https://spindown-solution-d7wv.onrender.com/`;
-  reloadWebsite(url2)
+  const url = `https://mdict.onrender.com/`;
+  reloadWebsite(url)
   next();
 });
 
@@ -25,6 +25,6 @@ app.listen(port, () => {
   setTimeout(function() {
     console.log('等了一会');}, 30000);
   console.log(`服务器正在 http://localhost:${port} 上运行`);
-  const url = `https://mdict.onrender.com/`;
-  reloadWebsite(url)
+  const url2 = `https://spindown-solution-d7wv.onrender.com/`;
+  reloadWebsite(url2)
 });
