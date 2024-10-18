@@ -14,7 +14,10 @@ function reloadWebsite(a) {
 
 app.use((req, res, next) => {
   setTimeout(function() {
-  console.log('等了一会');}, 30000);
+  console.log('等了一会');
+  const url2 = `https://spindown-solution-d7wv.onrender.com/`;
+  reloadWebsite(url2)
+}, 30000);
   const url = `https://mdict.onrender.com/`;
   reloadWebsite(url)
   next();
