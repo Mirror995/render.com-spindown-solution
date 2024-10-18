@@ -2,7 +2,7 @@ const express =require('express');
 const axios = require('axios');
 
 
-const url = `https://yourappname123.onrender.com/`;
+const url = `https://mdict.onrender.com/`;
 
 
 
